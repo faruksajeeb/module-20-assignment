@@ -28,7 +28,7 @@ const limiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 300 });
 app.use(limiter);
 
 
-let URI="mongodb+srv://<username>:<password>@cluster0.f0lznne.mongodb.net/mern-ecommerce";
+let URI="mongodb+srv://<username>:<password>@cluster0.f0lznne.mongodb.net/db-sales";
 let OPTION={user:'dgdg',pass:'3534545',autoIndex:true};
 mongoose.connect(URI,OPTION).then((res)=>{
     console.log("Database Connected!")
